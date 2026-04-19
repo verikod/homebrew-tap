@@ -5,21 +5,21 @@
 class Hector < Formula
   desc "Pure A2A-Native Declarative AI Agent Platform"
   homepage "https://github.com/verikod/hector"
-  version "1.40.3"
+  version "1.41.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/verikod/hector/releases/download/v1.40.3/hector_1.40.3_darwin_amd64.tar.gz"
-      sha256 "185a17a32a8619e56b1bfa3a7bc3c422a7e21d6d948f062a86e297df9fa9cef0"
+      url "https://github.com/verikod/hector/releases/download/v1.41.0/hector_1.41.0_darwin_amd64.tar.gz"
+      sha256 "e8325b960cf2a03f58cf7d172daff3e44efe1f30b8edf68f6fd74eb6445f00de"
 
       def install
         bin.install "hector"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/verikod/hector/releases/download/v1.40.3/hector_1.40.3_darwin_arm64.tar.gz"
-      sha256 "f4c12b8a808a59ed84ffbc2ce8cfee9f64cdab61ad5bf7f242bbd37daca042ab"
+      url "https://github.com/verikod/hector/releases/download/v1.41.0/hector_1.41.0_darwin_arm64.tar.gz"
+      sha256 "673406dab1498818c352e78973d3962311004b70069b76a5891f3a78b76e55aa"
 
       def install
         bin.install "hector"
@@ -29,15 +29,15 @@ class Hector < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/verikod/hector/releases/download/v1.40.3/hector_1.40.3_linux_amd64.tar.gz"
-      sha256 "09f2c752fe1e4aa5aabd0e1e688756319816c82d1078c8ca68080390b62bc4d8"
+      url "https://github.com/verikod/hector/releases/download/v1.41.0/hector_1.41.0_linux_amd64.tar.gz"
+      sha256 "dc60064e3beb91be817e84e364cd1265b55dd95f253c658a7b4dbd47d2beea0e"
       def install
         bin.install "hector"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/verikod/hector/releases/download/v1.40.3/hector_1.40.3_linux_arm64.tar.gz"
-      sha256 "c724e3b7f47c586efa66220dd639d7f9f482208a96f15e56c2ea7ea990fa5331"
+      url "https://github.com/verikod/hector/releases/download/v1.41.0/hector_1.41.0_linux_arm64.tar.gz"
+      sha256 "5eae1308731c81b1fda48f56594a32df74d221b5430ed9930b618a49b3ed97ca"
       def install
         bin.install "hector"
       end
